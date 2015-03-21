@@ -1,0 +1,153 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>FSC Login</title>
+		<script src="../Login_FSC/js/jquery.1.10.2.min.js" type="text/javascript"></script>
+		<link href="../Login_FSC/css/jflow.style.css" rel="stylesheet" type="text/css" />
+		<link href="../Login_FSC/css/chosen.css" rel="stylesheet" type="text/css" />
+		<script src="../Login_FSC/js/jflow.plus.min.js" type="text/javascript"></script>
+		<script src="../Login_FSC/js/chosen.jquery.min.js" type="text/javascript"></script>
+		<script src="../Login_FSC/js/NewLogin.js" type="text/javascript"></script>
+		
+</head>
+
+<script type="text/javascript">
+    
+	
+
+	$(function () {
+
+		$("#myController").jFlow({
+
+			controller: ".jFlowControl", // must be class, use . sign
+			slideWrapper: "#jFlowSlider", // must be id, use # sign
+			slides: "#mySlides",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			effect: "flow", //this is the slide effect (rewind or flow)
+			width: "100%",  // this is the width for the content-slider
+			height: "318px",  // this is the height for the content-slider
+			duration: 400,  // time in milliseconds to transition one slide
+			pause: 5000, //time between transitions
+			prev: ".jFlowPrev", // must be class, use . sign
+			next: ".jFlowNext", // must be class, use . sign
+			auto: true
+
+		});
+		
+		$(".cssBgBPO").css("padding", "0px 0px 0px 0px");
+
+	});
+
+</script>
+
+  <style type="text/css">
+        		
+		
+        .tablalogin
+        {
+            background-color: #81843D;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+            border-radius: 25px; /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+            -moz-box-shadow: 0px 0px 14px #000000;
+            -webkit-box-shadow: 0px 0px 14px #000000;
+            box-shadow: 0px 0px 14px #000000; /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+        }
+        .style3
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            color: #E8911E;
+            font-size: x-large;
+            margin-left: 5px;
+        }
+		.style2
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            color:#67656A;
+			font-size: 18px;
+            margin-left: 5px;
+        }
+		
+		.buttom
+		{
+			width: 50px;
+			height: 50px;
+			margin-right: 1em;
+			font-size: 50px;
+		    background-color: #ffffff;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; 
+			-webkit-border-radius: 5px;
+			border-bottom-color: #585858;
+        }
+				
+    </style>
+	
+<body class="cssBgBPO">
+		
+	<div id="contenedor" style="width: 271px; height: 81px;
+        position: absolute; left: 0; top: 0;">
+		<img alt="" src="../Login_FSC/images/logo2.png" />
+    </div>
+
+	<div id="container" style="margin: 100px auto;">
+		<div id="sliderContainer" >
+			<div id="mySlides" style="text-align: center;">
+				<div id="slide1" class="slide">
+					<img src="../Login_FSC/images/01.jpg" alt="" />
+				</div>
+				<div id="slide2" class="slide">
+					<img src="../Login_FSC/images/02.jpg" alt="" />
+				</div>
+				<div id="slide3" class="slide">
+					<img src="../Login_FSC/images/03.jpg" alt="" />
+				</div>
+				<div id="slide4" class="slide">
+					<img src="../Login_FSC/images/04.jpg" alt="" />
+				 </div>
+			</div>
+			<div id="myController">
+				<span class="jFlowControl"></span><span class="jFlowControl"></span><span class="jFlowControl"></span><span class="jFlowControl">
+				</span>
+			</div>
+			<div class="jFlowPrev">
+			</div>
+			<div class="jFlowNext">
+			</div>
+		</div>
+	</div>
+		
+	 <table style="background-color: #81843D; margin: 0 auto; clear: both; margin-right: 10%"
+			width="320px" class="tablalogin" align="right">
+			<tr>
+				<td valign="bottom" align="center">
+					<div class="cssTitleLogin">
+					</div>
+					<table width="79%" border="0" align="center" cellpadding="0" cellspacing="10">
+						<tr>
+							<td class="cssNone">
+								<span class="style3">Cliente</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select id="client" class="Ccombo style2"  name="dominain">
+									<option value="0">Seleccione...</option>
+									<option value="FSC">Misional</option>
+									<option value="FSC_ADM">Administrativo</option>
+								</select>
+							</td>
+						</tr>
+						<tr style="height: 10px">
+							<td>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+</body>
